@@ -1,0 +1,50 @@
+{
+  "Problem": {
+    "Type": "Electrostatic",
+    "Verbose": 2
+  },
+  "Model": {
+    "Mesh": "qubit_scaled.msh",
+    "L0": 1.0e-3,
+    "Lc": 1.0e-3,
+    "Refinement": {
+      "UniformLevels": 0
+    }
+  },
+  "Domains": {
+    "Materials": [
+      {
+        "Attributes": [213],
+        "Permittivity": 1.0
+      },
+      {
+        "Attributes": [214],
+        "Permittivity": 5.0
+      }
+    ]
+  },
+  "Boundaries": {
+    "Terminal": [
+      {
+        "Index": 1,
+        "Attributes": [210]
+      },
+      {
+        "Index": 2,
+        "Attributes": [211]
+      }
+    ],
+    "Ground":
+      {
+        "Attributes": [212]
+      }
+  },
+  "Solver": {
+    "Linear": {
+      "Type": "Default",
+      "KSPType": "GMRES",
+      "Tol": 1.0e-8,
+      "MaxIts": 2000
+    }
+  }
+}
