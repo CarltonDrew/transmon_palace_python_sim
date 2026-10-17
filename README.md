@@ -6,23 +6,25 @@ A complete, end-to-end simulation framework for superconducting quantum circuits
 
 ## Repository Structure
 
-transmon_palace_python_sim/
-├── README.md                          # Project documentation
-├── .gitignore                         # Ignored files/folders
-├── requirements.txt                   # Python package dependencies
-│
-├── cad/
-│   └── qubit_heterostructure.FCStd    # FreeCAD 3D model source
-│
-├── mesh/
-│   └── qubit_scaled.msh               # Gmsh tetrahedral mesh file
-│
-├── config/
-│   └── simulation.json                # AWS Palace electrostatic configuration
-│
-└── notebooks/
-    ├── transmon_spectrum.ipynb           # scqubits energy spectrum & charge noise analysis
-    └── microwave_control.ipynb           # QuTiP Rabi oscillations & T1 relaxation script
+    transmon_palace_python_sim/
+
+    ├── README.md                          # Project documentation
+    ├── .gitignore                         # Ignored files/folders
+    ├── requirements.txt                   # Python package dependencies
+    │
+    ├── cad/
+    │   └── qubit_heterostructure.FCStd    # FreeCAD 3D model source
+    │
+    ├── mesh/
+    │   └── qubit_scaled.msh               # Gmsh tetrahedral mesh file
+    │
+    ├── config/
+    │   └── simulation.json                # AWS Palace electrostatic configuration
+    │
+    └── notebooks/
+        ├── transmon_spectrum.ipynb           # scqubits energy spectrum & charge noise analysis
+        └── microwave_control.ipynb           # QuTiP Rabi oscillations & T1 relaxation script
+    
 
 ## Workflow Overview
 
